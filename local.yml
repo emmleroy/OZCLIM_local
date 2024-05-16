@@ -1,0 +1,27 @@
+name: ozclim-simple-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - cartopy>=0.17.0             # Geographic plotting toolkit
+  - numpy>=1.23.1               # N-d array and numerics
+  - pip>=19.2.2                 # Package installer for Python
+  - dask>=2.3.0                 # Parallel processing library
+  - netcdf4>=1.4.2              # Wrapper for netcdf4
+  - xarray=0.20.2               # N-d labeled array library.
+  - scipy>=1.3.1                # Common math/stats/science functions
+  - pandas>=0.25.1              # Labeled array libraries        
+  - matplotlib>=3.1.1           # 2D plotting library
+  - tqdm>=4.62.3                # Progress bar
+  - seaborn>=0.11.2             # Data visualization library
+  - shapely>=1.8.0              # For planar features
+  - regionmask>=0.8.0           # To create masks of geographic regions
+  - basemap>=1.2.2              # Map projections 
+  - mscorefonts>=0.0.1          # For fonts like Arial, Georgia, Times New Roman
+  - geoschem-gcpy>=1.3.2
+  - pip:
+          # Local pip-installable packages
+          - -e /Users/emmie/Documents/OZCLIM_local
+          - git+https://github.com/sdeastham/gcgridobj.git
+          - git+https://github.com/LiamBindle/sparselt.git
+          - git+https://github.com/LiamBindle/gridspec.git
