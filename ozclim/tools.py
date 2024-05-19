@@ -42,6 +42,22 @@ def set_matplotlib_font(font_family: str):
     plt.rcParams["mathtext.fontset"] = 'stixsans'
 
 
+def initialize_directory(directory_path: str):
+    """Make a directory if it doesn't already exist.
+
+    Args:
+        directory_path (str): path to directory to be created
+
+    """
+
+    if os.path.exists(directory_path):
+        print("Directory " + directory_path + " already exists!")
+
+    else:
+        os.makedirs(directory_path)
+        print("Initialized directory " + directory_path)
+
+
 def get_file_list(directory_path: str, compiled_regex: Pattern):
     """Return a list of file paths in a directory matching the regex pattern.
 
