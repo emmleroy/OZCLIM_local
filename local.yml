@@ -18,7 +18,8 @@ dependencies:
   - regionmask>=0.8.0           # To create masks of geographic regions
   - basemap>=1.2.2              # Map projections 
   - mscorefonts>=0.0.1          # For fonts like Arial, Georgia, Times New Roman
-  - geoschem-gcpy>=1.3.2
+  - geoschem-gcpy>=1.3.2        # For plotting cube-sphere and other utilities
+  - geocat-viz>=2022.07.0       # For NCL cmaps
   - openpyxl>=3.0.10            # To read excel files (observations)
   - pip:
           # Local pip-installable packages
